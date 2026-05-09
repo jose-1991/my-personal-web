@@ -424,6 +424,19 @@
       background: linear-gradient(135deg, rgba(0,212,255,.04), transparent);
       pointer-events: none; opacity: 0; transition: opacity .3s;
     }
+    .browser-frame {
+      transition: transform .4s cubic-bezier(0.4,0,0.2,1), box-shadow .4s ease;
+      cursor: none;
+    }
+    .browser-frame:hover {
+      transform: scale(1.04);
+      box-shadow: 0 40px 100px rgba(0,0,0,.7), 0 0 0 1px rgba(0,212,255,.15), 0 0 40px rgba(0,212,255,.08);
+      z-index: 10;
+    }
+    .carousel-slide img {
+      transition: transform .6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .browser-frame:hover .carousel-slide img { transform: scale(1.03); }
     .browser-frame:hover .carousel::after { opacity: 1; }
 
     /* Nav arrows */
@@ -902,8 +915,7 @@
             <span class="project-tag">REST API</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-btn primary">Live Demo</a>
-            <a href="#" class="project-btn secondary">GitHub</a>
+            <a href="https://github.com/jose-1991" target="_blank" class="project-btn primary">GitHub</a>
           </div>
         </div>
       </div>
@@ -946,8 +958,7 @@
             <span class="project-tag" style="border-color:rgba(123,47,255,.35);color:var(--purple);background:rgba(123,47,255,.06);">JWT Auth</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-btn primary" style="background:linear-gradient(135deg,var(--purple),var(--pink));box-shadow:0 0 20px rgba(123,47,255,.25);">Live Demo</a>
-            <a href="#" class="project-btn secondary" style="border-color:rgba(123,47,255,.35);color:var(--purple);">GitHub</a>
+            <a href="https://github.com/jose-1991" target="_blank" class="project-btn primary" style="background:linear-gradient(135deg,var(--purple),var(--pink));box-shadow:0 0 20px rgba(123,47,255,.25);">GitHub</a>
           </div>
         </div>
       </div>
